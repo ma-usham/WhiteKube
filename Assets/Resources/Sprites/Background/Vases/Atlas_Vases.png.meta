@@ -1,0 +1,586 @@
+fileFormatVersion: 2
+guid: 1974cf6eee75eb647a90f8b2df52f51f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: Vase_Edge_0008
+  - first:
+      213: 21300002
+    second: Vase_Edge_0001
+  - first:
+      213: 21300004
+    second: Vase_0001
+  - first:
+      213: 21300006
+    second: Vase_0008
+  - first:
+      213: 21300008
+    second: Vase_Edge_0005
+  - first:
+      213: 21300010
+    second: Vase_Edge_0004
+  - first:
+      213: 21300012
+    second: Vase_Edge_0012
+  - first:
+      213: 21300014
+    second: Vase_Edge_0011
+  - first:
+      213: 21300016
+    second: Vase_0012
+  - first:
+      213: 21300018
+    second: Vase_Edge_0013
+  - first:
+      213: 21300020
+    second: Vase_0004
+  - first:
+      213: 21300022
+    second: Vase_Edge_0006
+  - first:
+      213: 21300024
+    second: Vase_0005
+  - first:
+      213: 21300026
+    second: Vase_0011
+  - first:
+      213: 21300028
+    second: Vase_Edge_0009
+  - first:
+      213: 21300030
+    second: Vase_Edge_0002
+  - first:
+      213: 21300032
+    second: Vase_0006
+  - first:
+      213: 21300034
+    second: Vase_Edge_0003
+  - first:
+      213: 21300036
+    second: Vase_Edge_0010
+  - first:
+      213: 21300038
+    second: Vase_0013
+  - first:
+      213: 21300040
+    second: Vase_0009
+  - first:
+      213: 21300042
+    second: Vase_0002
+  - first:
+      213: 21300044
+    second: Vase_0010
+  - first:
+      213: 21300046
+    second: Vase_0003
+  - first:
+      213: 21300048
+    second: Vase_Edge_0007
+  - first:
+      213: 21300050
+    second: Vase_0007
+  - first:
+      213: 21300052
+    second: Shard_Edge_0004
+  - first:
+      213: 21300054
+    second: Shard_0004
+  - first:
+      213: 21300056
+    second: Shard_Edge_0001
+  - first:
+      213: 21300058
+    second: Shard_Edge_0006
+  - first:
+      213: 21300060
+    second: Shard_0001
+  - first:
+      213: 21300062
+    second: Shard_0006
+  - first:
+      213: 21300064
+    second: Shard_Edge_0005
+  - first:
+      213: 21300066
+    second: Shard_0005
+  - first:
+      213: 21300068
+    second: Shard_Edge_0003
+  - first:
+      213: 21300070
+    second: Shard_Edge_0007
+  - first:
+      213: 21300072
+    second: Shard_Edge_0002
+  - first:
+      213: 21300074
+    second: Shard_0003
+  - first:
+      213: 21300076
+    second: Shard_0007
+  - first:
+      213: 21300078
+    second: Shard_0002
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Atlas_Vases_6
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 348
+        width: 46
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c4abbed2cc8d7b419a58d2aac890a72
+      internalID: 1917467689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_Vases_9
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 264
+        width: 46
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c071ab389d4cd2d41a32767e19c1e3d4
+      internalID: -2137451599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_Vases_10
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 343
+        width: 58
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f37b558eab7565147959feab459b1140
+      internalID: 950347182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_Vases_13
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 180
+        width: 50
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6762f6254044e1540aadb62109d8b90b
+      internalID: 83365242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_Vases_15
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 253
+        width: 50
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b31a0d2836f49643a6472e508233cab
+      internalID: -1697202841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_Vases_17
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 94
+        width: 46
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3c6038a98b9fc04f9c52a13631e43e4
+      internalID: 1479655093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_Vases_19
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 177
+        width: 40
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2f789ce9e656a042b58834963611c24
+      internalID: 342021446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_Vases_21
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 167
+        width: 70
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9342ad5b53f60442ad617500f6621ea
+      internalID: 400873115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_Vases_25
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 85
+        width: 36
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4dab503c6157cd4ea6ee0488ec60e4e
+      internalID: -1223043932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_Vases_26
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 84
+        width: 60
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6d0738536565d24a96a2ddb8f77c00b
+      internalID: 144261728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_Vases_31
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 1
+        width: 54
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df557fefeb8571841a9f9e3279ea02b8
+      internalID: 1997856325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_Vases_33
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 1
+        width: 44
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 996b518778e21794181e856aaa5436d6
+      internalID: 1614507189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_Vases_36
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 1
+        width: 72
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af2d4c52f8ce9f241be6f236295ae276
+      internalID: -1669522790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: fce5f2b9d057227499f29dc933f6570b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Atlas_Vases_0: -887670925
+      Atlas_Vases_1: 1023613476
+      Atlas_Vases_10: 950347182
+      Atlas_Vases_11: 312544423
+      Atlas_Vases_12: -1458296286
+      Atlas_Vases_13: 83365242
+      Atlas_Vases_14: -1411236544
+      Atlas_Vases_15: -1697202841
+      Atlas_Vases_16: 1152063767
+      Atlas_Vases_17: 1479655093
+      Atlas_Vases_18: 806452028
+      Atlas_Vases_19: 342021446
+      Atlas_Vases_2: -20641209
+      Atlas_Vases_20: -1486614044
+      Atlas_Vases_21: 400873115
+      Atlas_Vases_22: 1000571630
+      Atlas_Vases_23: -1630794779
+      Atlas_Vases_24: -2091095516
+      Atlas_Vases_25: -1223043932
+      Atlas_Vases_26: 144261728
+      Atlas_Vases_27: -1852503943
+      Atlas_Vases_28: -686083831
+      Atlas_Vases_29: -1464100155
+      Atlas_Vases_3: 1224765350
+      Atlas_Vases_30: 2080278621
+      Atlas_Vases_31: 1997856325
+      Atlas_Vases_32: -617124783
+      Atlas_Vases_33: 1614507189
+      Atlas_Vases_34: -2111404070
+      Atlas_Vases_35: 682919839
+      Atlas_Vases_36: -1669522790
+      Atlas_Vases_37: -510270174
+      Atlas_Vases_38: -33655800
+      Atlas_Vases_39: 1607658312
+      Atlas_Vases_4: -1853997246
+      Atlas_Vases_5: 1701695642
+      Atlas_Vases_6: 1917467689
+      Atlas_Vases_7: -220194244
+      Atlas_Vases_8: -1589987400
+      Atlas_Vases_9: -2137451599
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
