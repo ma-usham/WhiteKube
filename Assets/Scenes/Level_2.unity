@@ -6429,7 +6429,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationInStart: 1
-  speed_rotation: -50
+  speed_rotation: -80
 --- !u!223 &2354145991610774654
 Canvas:
   m_ObjectHideFlags: 0
@@ -14384,7 +14384,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20bf64bf581d4bd4aadf29046e1f7701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 70
   waitDuration: 0
   posA: {fileID: 8971672626086996318}
   posB: {fileID: 8382830788422910040}
