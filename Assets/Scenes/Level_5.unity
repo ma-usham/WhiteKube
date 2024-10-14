@@ -925,7 +925,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20bf64bf581d4bd4aadf29046e1f7701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 70
   waitDuration: 0
   posA: {fileID: 901277500}
   posB: {fileID: 946529374}
@@ -1835,7 +1835,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20bf64bf581d4bd4aadf29046e1f7701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 70
   waitDuration: 0
   posA: {fileID: 1798344223}
   posB: {fileID: 207921854}
@@ -2426,7 +2426,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20bf64bf581d4bd4aadf29046e1f7701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 70
   waitDuration: 0
   posA: {fileID: 1163482335}
   posB: {fileID: 284012912}
@@ -2549,7 +2549,7 @@ PrefabInstance:
     - target: {fileID: 4881114032395766951, guid: 1a69b359cd14978499db96d17c50c15c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.2604818
+      value: -3.233333
       objectReference: {fileID: 0}
     - target: {fileID: 4881114032395766951, guid: 1a69b359cd14978499db96d17c50c15c,
         type: 3}
@@ -2862,7 +2862,7 @@ Transform:
   m_GameObject: {fileID: 1661582392}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.2604818, y: 1.1999999, z: -10}
+  m_LocalPosition: {x: -3.233333, y: 1.1999999, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -18986,7 +18986,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.252, y: 0.047814816}
   m_AnchorMax: {x: 0.33378628, y: 0.256}
-  m_AnchoredPosition: {x: 19.967224, y: 3.6395264}
+  m_AnchoredPosition: {x: 19.967285, y: 3.6395264}
   m_SizeDelta: {x: -16.187805, y: 0.6795654}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &8017806231377852938
@@ -19679,7 +19679,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20bf64bf581d4bd4aadf29046e1f7701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 70
   waitDuration: 0
   posA: {fileID: 5437541347518487668}
   posB: {fileID: 3022164674135698430}

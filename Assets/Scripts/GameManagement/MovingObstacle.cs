@@ -40,11 +40,11 @@ public class MovingObstacle : MonoBehaviour
         float distance = Vector2.Distance(transform.position, targetPos);
         if (Obs_is_Vertical)
         {
-            velocity = new Vector2(rb.velocity.x, direction.y * speed);
+            velocity = new Vector2(rb.velocity.x, direction.y * speed*Time.deltaTime);
         }
         if (Obs_is_Horizontal)
         {
-            velocity = new Vector2(direction.x * speed, rb.velocity.y);
+            velocity = new Vector2(direction.x * speed, rb.velocity.y*Time.deltaTime);
         }
         rb.velocity = velocity;
         if (distance < 0.1f) SwitchTarget();
