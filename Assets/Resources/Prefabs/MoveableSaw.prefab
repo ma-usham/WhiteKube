@@ -226,7 +226,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20bf64bf581d4bd4aadf29046e1f7701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 70
   waitDuration: 0
   posA: {fileID: 3947857638480524812}
   posB: {fileID: 4475908509540851466}
@@ -245,7 +245,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationInStart: 1
-  speed_rotation: -50
+  speed_rotation: -80
 --- !u!1 &7240631854182526664
 GameObject:
   m_ObjectHideFlags: 0

@@ -25,6 +25,7 @@ public class TargetObstacle : MonoBehaviour
     void FixedUpdate()
     {
         Vector2 direction = (targetPos.position - transform.position).normalized;
+        float distance = Vector2.Distance(transform.position, targetPos.position);
         if (Obs_is_Vertical)
         {
             velocity = new Vector2(rb.velocity.x, direction.y * speed*Time.deltaTime);
@@ -33,7 +34,12 @@ public class TargetObstacle : MonoBehaviour
         {
             velocity = new Vector2(direction.x * speed*Time.deltaTime, rb.velocity.y);
         }
-        rb.velocity = velocity;
+        if (distance < 0.1)
+        {
+            velocity = new Vector2(0,0);
+        }
+            rb.velocity = velocity;
+        
 
         if (playerDeathCheck.isdead)
         {
