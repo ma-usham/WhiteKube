@@ -42,8 +42,8 @@ public class PortalController : MonoBehaviour
         Anim.Play("PlayerInPortal");
         StartCoroutine(MoveInsidePortal());
         yield return new WaitForSeconds(0.5f);
-        
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneController.instance.NextLevel();
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
     IEnumerator MoveInsidePortal()
     {

@@ -7,15 +7,14 @@ using UnityEngine.UI;
 public class SceneController : MonoBehaviour
 {
     public static SceneController instance;
-   // public Animator transitionAnim;
-
-   // Canvas canvas;
-   // Image image;
+    public Animator transitionAnim;
+    //Canvas canvas;
+    public Image transitionImage;
     private void Awake()
     {
-       // canvas = GetComponentInChildren<Canvas>();
-       // image = canvas.GetComponentInChildren<Image>();
-       // image.gameObject.SetActive(false);
+        //canvas = GetComponentInChildren<Canvas>();
+        //transitionImage = canvas.GetComponentInChildren<Image>();
+        //transitionImage.gameObject.SetActive(false);
 
         if (instance == null)
         {
@@ -45,32 +44,32 @@ public class SceneController : MonoBehaviour
     }
     IEnumerator LoadLevel()
     {
-       // image.gameObject.SetActive(true);
-        //transitionAnim.SetTrigger("End");
+        transitionImage.gameObject.SetActive(true);
+        transitionAnim.SetTrigger("End");
         yield return new WaitForSeconds(1);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        //transitionAnim.SetTrigger("Start");
+        transitionAnim.SetTrigger("Start");
         yield return new WaitForSeconds(1);
-        //image.gameObject.SetActive(false);
+        transitionImage.gameObject.SetActive(false);
     }
     IEnumerator RestartLevel()
     {
-       // image.gameObject.SetActive(true);
-        //transitionAnim.SetTrigger("End");
+       transitionImage.gameObject.SetActive(true);
+        transitionAnim.SetTrigger("End");
         yield return new WaitForSeconds(1);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        //transitionAnim.SetTrigger("Start");
+        transitionAnim.SetTrigger("Start");
         yield return new WaitForSeconds(1);
-        //image.gameObject.SetActive(false);
+        transitionImage.gameObject.SetActive(false);
     }
     IEnumerator loadWithIndex(int sceneIndex)
     {
-        //image.gameObject.SetActive(true);
-        //transitionAnim.SetTrigger("End");
+        transitionImage.gameObject.SetActive(true);
+        transitionAnim.SetTrigger("End");
         yield return new WaitForSeconds(1);
         SceneManager.LoadScene(sceneIndex);
-        //transitionAnim.SetTrigger("Start");
+        transitionAnim.SetTrigger("Start");
         yield return new WaitForSeconds(1);
-       // image.gameObject.SetActive(false);
+       transitionImage.gameObject.SetActive(false);
     }
 }
