@@ -27,7 +27,7 @@ public class PortalController : MonoBehaviour
     {
         if(collision.CompareTag("Player"))
         {
-            //UnlockNewLevel();
+            UnlockNewLevel();
             StartCoroutine(PortalIn());
         }
     }
@@ -54,7 +54,7 @@ public class PortalController : MonoBehaviour
         }
         timer += Time.deltaTime;
     }
-   /* void UnlockNewLevel()
+    void UnlockNewLevel()
     {
         if(SceneManager.GetActiveScene().buildIndex >= PlayerPrefs.GetInt("ReachedIndex"))
         {
@@ -62,6 +62,6 @@ public class PortalController : MonoBehaviour
             PlayerPrefs.SetInt("UnlockedLevel", PlayerPrefs.GetInt("UnlockedLevel",1)+1);
             PlayerPrefs.Save();
         }
-    }*/
+    }
 
 }

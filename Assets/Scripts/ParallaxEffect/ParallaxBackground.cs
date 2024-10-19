@@ -16,7 +16,6 @@ using System.Collections;
 
         void Start()
         {
-           // main_camera = FollowCamera.GetCamera();
             render = GetComponent<Renderer>();
         }
 
