@@ -43,7 +43,6 @@ public class PortalController : MonoBehaviour
         StartCoroutine(MoveInsidePortal());
         yield return new WaitForSeconds(0.5f);
         SceneController.instance.NextLevel();
-        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
     IEnumerator MoveInsidePortal()
     {

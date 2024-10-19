@@ -8,13 +8,10 @@ public class SceneController : MonoBehaviour
 {
     public static SceneController instance;
     public Animator transitionAnim;
-    //Canvas canvas;
     public Image transitionImage;
     private void Awake()
     {
-        //canvas = GetComponentInChildren<Canvas>();
-        //transitionImage = canvas.GetComponentInChildren<Image>();
-        //transitionImage.gameObject.SetActive(false);
+        
 
         if (instance == null)
         {
