@@ -10,7 +10,7 @@ public class MainMenu : MonoBehaviour
     public GameObject levelsPanel;
     public GameObject buttonsPanel;
 
-
+    
     public void OnPlayBtnClicked()
     {
         int level = PlayerPrefs.GetInt("UnlockedLevel", 1);
