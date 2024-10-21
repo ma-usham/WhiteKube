@@ -11,8 +11,8 @@ public class SceneController : MonoBehaviour
     public Image transitionImage;
     private void Awake()
     {
-        
 
+        transitionImage.gameObject.SetActive(false);
         if (instance == null)
         {
             instance = this;

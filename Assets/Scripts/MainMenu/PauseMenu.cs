@@ -18,21 +18,25 @@ public class PauseMenu : MonoBehaviour
     public void OnPauseBtnClicked()
     {
         pausePanel.SetActive(true);
+        Time.timeScale = 0;
         buttonsTransition.DisableButtons();
     }
     public void OnHomeBtnClicked()
     {
         SceneController.instance.LoadScene(0);
+        Time.timeScale = 1;
         pausePanel.SetActive(false);
     }
     public void OnRestartBtnClicked()
     {
         SceneController.instance.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Time.timeScale = 1;
         pausePanel.SetActive(false);
     }
     public void OnResumeBtnClicked()
     {
         pausePanel.SetActive(false);
+        Time.timeScale = 1;
         buttonsTransition.EnableButtons();
     }
 
