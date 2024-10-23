@@ -11,16 +11,18 @@ public class PlayerDeathCheck : MonoBehaviour
     public TrailRenderer playerTrail;
     private AudioManager audioManager;
    // private CameraShake cameraShake;
-   // ButtonsTransition buttonTransition;
+    ButtonsTransition buttonTransition;
     Vector2 startPos;
     private Rigidbody2D rbplayer;
+    private PlayerInput playerInput;
     public bool isdead;
     public float respawnTime = 0.5f;
     private void Awake()
     {
         rbplayer = GetComponent<Rigidbody2D>();
         //game = FindObjectOfType<GameUI>();
-        //buttonTransition = FindObjectOfType<ButtonsTransition>();
+        playerInput = GetComponent<PlayerInput>(); 
+        buttonTransition = FindObjectOfType<ButtonsTransition>();
         audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
        // cameraShake = FindObjectOfType<CameraShake>();
     }
@@ -42,8 +44,9 @@ public class PlayerDeathCheck : MonoBehaviour
         if (isdead) return;
         Debug.Log("die");
         isdead = true;
+        playerInput.Move = 0;
         rbplayer.simulated = false;
-        // buttonTransition.DisableButtons();
+        buttonTransition.DisableButtons();
         playerSprite.enabled = false;
         StartCoroutine(Respawn(respawnTime));
         playerTrail.enabled = false;
@@ -56,12 +59,12 @@ public class PlayerDeathCheck : MonoBehaviour
         transform.localScale = new Vector3(0, 0, 0);
         rbplayer.velocity = new Vector2(0, 0);
         yield return new WaitForSeconds(duration);
-        //SceneController.instance.Restart();
+        
         deadParticle.Clear();
         //playerInput.playerControls.Enable();
         transform.position = startPos;
         transform.localScale = new Vector3(1, 1, 1);
-        // buttonTransition.Enablebuttons();
+        buttonTransition.EnableButtons();
         playerSprite.enabled = true;
         rbplayer.simulated = true;
         playerTrail.enabled = true;
