@@ -16,14 +16,14 @@ public class AutoFiringGun : MonoBehaviour
     private void Start()
     {
         initialBulletInterval = bulletInterval;
+
+        // Directly find and assign the player at the start
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     private void Update()
     {
-        // Find the closest player once per frame and rotate the gun towards it
-        player = FindClosestPlayer();
-
-        // Rotate towards player
+        // Rotate towards the player
         if (player != null)
         {
             RotateTowardsPlayer(player);
@@ -64,32 +64,5 @@ public class AutoFiringGun : MonoBehaviour
             float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
             firePoint.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
         }
-    }
-
-    GameObject FindClosestPlayer()
-    {
-        GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
-
-        // If only one player exists, return it directly
-        if (players.Length == 1)
-        {
-            return players[0];
-        }
-
-        GameObject closestPlayer = null;
-        float shortestDistance = 10f;
-
-        // Search for the closest player
-        foreach (GameObject player in players)
-        {
-            float distance = Vector2.Distance(transform.position, player.transform.position);
-            if (distance < shortestDistance)
-            {
-                shortestDistance = distance;
-                closestPlayer = player;
-            }
-        }
-
-        return closestPlayer;
     }
 }
