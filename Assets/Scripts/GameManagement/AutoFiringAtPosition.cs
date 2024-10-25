@@ -11,7 +11,7 @@ public class AutoFiringAtPosition : MonoBehaviour
 
     [Header("Target Object")]
     public GameObject targetObject; // Assign the target GameObject from the inspector
-    public Animator gunAnimator; // Use Animator instead of Animation
+    
 
     private void Start()
     {
@@ -41,9 +41,9 @@ public class AutoFiringAtPosition : MonoBehaviour
            
 
             GameObject bullet = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
-            gunAnimator.SetTrigger("Fire");
+            
             Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-            rb.velocity = direction * bulletSpeed;
+            rb.velocity = direction * bulletSpeed * Time.deltaTime;
 
             Destroy(bullet, bulletLifetime);
         }

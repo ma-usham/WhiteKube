@@ -12,6 +12,7 @@ public class AutoFiringGun : MonoBehaviour
     public float bulletLifetime = 5f;
 
     private GameObject player; // Cached player reference
+    
 
     private void Start()
     {
@@ -46,10 +47,9 @@ public class AutoFiringGun : MonoBehaviour
         if (targetPlayer != null)
         {
             Vector2 direction = (targetPlayer.transform.position - firePoint.position).normalized;
-
             GameObject bullet = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
             Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-            rb.velocity = direction * bulletSpeed;
+            rb.velocity = direction * bulletSpeed*Time.deltaTime;
 
             // Destroy the bullet after a specified lifetime
             Destroy(bullet, bulletLifetime);

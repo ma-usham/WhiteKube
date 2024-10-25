@@ -139,7 +139,6 @@ MonoBehaviour:
   bulletInterval: 3
   bulletLifetime: 12
   targetObject: {fileID: 3893091143314438072}
-  gunAnimator: {fileID: 3968862506710625757}
 --- !u!210 &8081100597286853423
 SortingGroup:
   m_ObjectHideFlags: 0
