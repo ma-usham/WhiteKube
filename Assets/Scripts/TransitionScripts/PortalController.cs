@@ -28,6 +28,7 @@ public class PortalController : MonoBehaviour
     {
         if(collision.CompareTag("Player"))
         {
+         
             UnlockNewLevel();
             StartCoroutine(PortalIn());
         }
@@ -43,7 +44,8 @@ public class PortalController : MonoBehaviour
         Anim.Play("PlayerInPortal");
         StartCoroutine(MoveInsidePortal());
         yield return new WaitForSeconds(0.5f);
-        SceneController.instance.NextLevel();
+        if (SceneManager.GetActiveScene().buildIndex == 15) { SceneController.instance.LoadScene(0); } // last level
+        else SceneController.instance.NextLevel();
     }
     IEnumerator MoveInsidePortal()
     {
