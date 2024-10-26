@@ -12,16 +12,16 @@ public class PortalController : MonoBehaviour
     GameObject Player;
     Rigidbody2D playerRB;
 
-   // ButtonsTransition buttonTransition;
-   // PlayerInput playerInput;
+    ButtonsTransition buttonTransition;
+    PlayerInput playerInput;
  
 
     private void Awake()
     {
         Player = GameObject.FindGameObjectWithTag("Player");
         Anim = Player.GetComponent<Animation>();
-        //buttonTransition = FindObjectOfType<ButtonsTransition>();
-       // playerInput = FindObjectOfType<PlayerInput>();
+        buttonTransition = FindObjectOfType<ButtonsTransition>();
+        playerInput = FindObjectOfType<PlayerInput>();
         playerRB = Player.GetComponent<Rigidbody2D>();
     }
     private void OnTriggerEnter2D(Collider2D collision)
@@ -38,9 +38,9 @@ public class PortalController : MonoBehaviour
     IEnumerator PortalIn()
     {
         playerRB.simulated = false;
-       // playerInput.Move = 0;
+        playerInput.Move = 0;
        // playerInput.playerControls.Disable();
-        //buttonTransition.DisableButtons();
+        buttonTransition.DisableButtons();
         Anim.Play("PlayerInPortal");
         StartCoroutine(MoveInsidePortal());
         yield return new WaitForSeconds(0.5f);

@@ -67,6 +67,6 @@ public class SceneController : MonoBehaviour
         SceneManager.LoadScene(sceneIndex);
         transitionAnim.SetTrigger("Start");
         yield return new WaitForSeconds(1);
-       transitionImage.gameObject.SetActive(false);
+        transitionImage.gameObject.SetActive(false);
     }
 }
