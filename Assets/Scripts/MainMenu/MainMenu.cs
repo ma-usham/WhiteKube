@@ -32,6 +32,19 @@ public class MainMenu : MonoBehaviour
         levelsPanel.SetActive(false);
         buttonsPanel.SetActive(true);
     }
+    public void OnExitBtnClicked()
+    {
+        Debug.Log("Quiting");
+        Application.Quit();
+    }
+    public void OnRateMeBtnClicked()
+    {
+#if UNITY_ANDROID
+        Application.OpenURL("https://www.facebook.com/boy.mausham");
+#elif UNITY_IOS
+            Application.OpenURL("itms-apps://itunes.apple.com/app/idYOUR_APP_ID");
+#endif
+    }
 
 
 }

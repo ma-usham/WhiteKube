@@ -71,11 +71,6 @@ public class SceneController : MonoBehaviour
         transitionImage.gameObject.SetActive(true);
         transitionAnim.SetTrigger("End");
         yield return new WaitForSeconds(1);
-        if (sceneIndex % 3 == 0 && sceneIndex != 0)
-        {
-            AudioManager.instance.Pause();
-            AdsManager.Instance.interstitialAds.ShowInterstitialAd();
-        }
         SceneManager.LoadScene(sceneIndex);
         transitionAnim.SetTrigger("Start");
         yield return new WaitForSeconds(1);
