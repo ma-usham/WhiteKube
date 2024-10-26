@@ -39,7 +39,7 @@ public class PortalController : MonoBehaviour
     {
         playerRB.simulated = false;
         playerInput.Move = 0;
-       // playerInput.playerControls.Disable();
+        playerInput.playerControls.Disable();
         buttonTransition.DisableButtons();
         Anim.Play("PlayerInPortal");
         StartCoroutine(MoveInsidePortal());

@@ -26,6 +26,7 @@ public class SceneController : MonoBehaviour
     }
     public void LoadScene( int sceneIndex)
     {
+       
         StartCoroutine(loadWithIndex(sceneIndex));
 
     }
@@ -37,6 +38,7 @@ public class SceneController : MonoBehaviour
     }
     public void NextLevel()
     {
+       
         StartCoroutine(LoadLevel());
     }
     IEnumerator LoadLevel()
@@ -44,6 +46,11 @@ public class SceneController : MonoBehaviour
         transitionImage.gameObject.SetActive(true);
         transitionAnim.SetTrigger("End");
         yield return new WaitForSeconds(1);
+        if (SceneManager.GetActiveScene().buildIndex % 3 == 0)
+        {
+            AudioManager.instance.Pause();
+            AdsManager.Instance.interstitialAds.ShowInterstitialAd();
+        }
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         transitionAnim.SetTrigger("Start");
         yield return new WaitForSeconds(1);
@@ -64,6 +71,11 @@ public class SceneController : MonoBehaviour
         transitionImage.gameObject.SetActive(true);
         transitionAnim.SetTrigger("End");
         yield return new WaitForSeconds(1);
+        if (sceneIndex % 3 == 0 && sceneIndex != 0)
+        {
+            AudioManager.instance.Pause();
+            AdsManager.Instance.interstitialAds.ShowInterstitialAd();
+        }
         SceneManager.LoadScene(sceneIndex);
         transitionAnim.SetTrigger("Start");
         yield return new WaitForSeconds(1);

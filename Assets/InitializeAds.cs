@@ -10,6 +10,9 @@ public class InitializeAds : MonoBehaviour, IUnityAdsInitializationListener
     [SerializeField] private string iosGameId;
     [SerializeField] private bool isTesting;
 
+    [SerializeField] private RewardedAds rewardedAds;
+    [SerializeField] private InterstitialAds interstitialAds;
+
     private string gameId;
 
 
@@ -33,6 +36,8 @@ public class InitializeAds : MonoBehaviour, IUnityAdsInitializationListener
     public void OnInitializationComplete()
     {
         Debug.Log("Ads Initialized...");
+        rewardedAds.LoadRewardedAd();
+        interstitialAds.LoadInterstitialAd();
     }
 
     public void OnInitializationFailed(UnityAdsInitializationError error, string message) { }

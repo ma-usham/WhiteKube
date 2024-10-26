@@ -251,7 +251,7 @@ PrefabInstance:
     - target: {fileID: 4881114032395766951, guid: 1a69b359cd14978499db96d17c50c15c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.233333
+      value: -4.1192307
       objectReference: {fileID: 0}
     - target: {fileID: 4881114032395766951, guid: 1a69b359cd14978499db96d17c50c15c,
         type: 3}
@@ -792,7 +792,7 @@ Transform:
   m_GameObject: {fileID: 895721804}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.233333, y: 1.1999999, z: -10}
+  m_LocalPosition: {x: -4.1192307, y: 1.1999999, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1125,18 +1125,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1542455845 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7761683913991720873, guid: 2976706f670c91a429f171f17d7b9a39,
-    type: 3}
-  m_PrefabInstance: {fileID: 1542455841}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e59ff2515a88ebb468b3f1a08417b79b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1576956656
@@ -1521,7 +1509,7 @@ PrefabInstance:
         type: 3}
       propertyPath: rewardedAdsButton
       value: 
-      objectReference: {fileID: 1542455845}
+      objectReference: {fileID: 0}
     - target: {fileID: 6958911602322577043, guid: d229904a6164b0341bbeb2dad3a7a8e4,
         type: 3}
       propertyPath: skipPanel

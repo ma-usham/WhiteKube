@@ -8,6 +8,7 @@ public class AdsManager : MonoBehaviour
    // public BannerAds bannerAds;
    // public InterstitialAds interstitialAds;
     public RewardedAds rewardedAds;
+    public InterstitialAds interstitialAds;
 
     public static AdsManager Instance { get; private set; }
 
@@ -26,6 +27,6 @@ public class AdsManager : MonoBehaviour
 
        // bannerAds.LoadBannerAd();
        // interstitialAds.LoadInterstitialAd();
-        rewardedAds.LoadRewardedAd();
+       // rewardedAds.LoadRewardedAd();
     }
 }

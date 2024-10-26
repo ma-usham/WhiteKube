@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Advertisements;
 
-public class RewardedAds : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowListener
+public class InterstitialAds : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowListener
 {
     [SerializeField] private string androidAdUnitId;
     [SerializeField] private string iosAdUnitId;
@@ -13,22 +13,21 @@ public class RewardedAds : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowLi
     private void Awake()
     {
 #if UNITY_IOS
-          adUnitId = iosAdUnitId;
+                adUnitId = iosAdUnitId;
 #elif UNITY_ANDROID
-        adUnitId = androidAdUnitId;
+                adUnitId = androidAdUnitId;
 #endif
     }
 
-
-    public void LoadRewardedAd()
+    public void LoadInterstitialAd()
     {
         Advertisement.Load(adUnitId, this);
     }
 
-    public void ShowRewardedAd()
+    public void ShowInterstitialAd()
     {
         Advertisement.Show(adUnitId, this);
-        LoadRewardedAd();
+        LoadInterstitialAd();
     }
 
 
@@ -37,12 +36,11 @@ public class RewardedAds : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowLi
     #region LoadCallbacks
     public void OnUnityAdsAdLoaded(string placementId)
     {
-        Debug.Log("Rewarded Ad Loaded");
+        Debug.Log("Interstitial Ad Loaded");
     }
 
     public void OnUnityAdsFailedToLoad(string placementId, UnityAdsLoadError error, string message) { }
     #endregion
-
     #region ShowCallbacks
     public void OnUnityAdsShowFailure(string placementId, UnityAdsShowError error, string message) { }
 
@@ -52,14 +50,8 @@ public class RewardedAds : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowLi
 
     public void OnUnityAdsShowComplete(string placementId, UnityAdsShowCompletionState showCompletionState)
     {
-        if (placementId == adUnitId && showCompletionState.Equals(UnityAdsShowCompletionState.COMPLETED))
-        {
-            AudioManager.instance.Resume();
-            SceneController.instance.NextLevel();
-            Time.timeScale = 1;
-        }
+        Debug.Log("Interstitial Ad Completed");
+        AudioManager.instance.Resume();
     }
     #endregion
-
-
 }
