@@ -7,6 +7,7 @@ using TMPro;
 public class LevelMenu : MonoBehaviour
 {
     public Button[] buttons;
+    
 
     private void Awake()
     {

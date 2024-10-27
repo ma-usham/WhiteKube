@@ -10,11 +10,16 @@ public class MainMenu : MonoBehaviour
     public GameObject levelsPanel;
     public GameObject buttonsPanel;
 
-    
+    private void Start()
+    {
+        settingsPanel.SetActive(false);
+        levelsPanel.SetActive(false);  
+    }
+
     public void OnPlayBtnClicked()
     {
         int level = PlayerPrefs.GetInt("UnlockedLevel", 1);
-        SceneController.instance.LoadScene(level);
+        SceneController.instance.LoadScene(level+1);
     }
     public void OnLevelsBtnClicked()
     {
