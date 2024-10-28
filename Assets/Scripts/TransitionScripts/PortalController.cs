@@ -49,6 +49,7 @@ public class PortalController : MonoBehaviour
     }
     IEnumerator MoveInsidePortal()
     {
+        AudioManager.instance.PlaySFX(AudioManager.instance.portalInSound);
         float timer = 0;
         while(timer < 0.5f)
         {

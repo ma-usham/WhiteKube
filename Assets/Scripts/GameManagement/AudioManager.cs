@@ -15,8 +15,10 @@ public class AudioManager : MonoBehaviour
   
     public AudioClip background;
     public AudioClip death;
+    public AudioClip buttonClick;
+    public AudioClip portalInSound;
     //public AudioClip jump;
-    
+
     public static AudioManager instance;
     private void Awake()
     {

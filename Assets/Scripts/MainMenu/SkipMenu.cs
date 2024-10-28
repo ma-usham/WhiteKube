@@ -19,12 +19,14 @@ public class SkipMenu : MonoBehaviour
     }
     public void OnSkipBtnClicked()
     {
+        AudioManager.instance.PlaySFX(AudioManager.instance.buttonClick);
         skipPanel.SetActive(true);
         Time.timeScale = 0;
         buttonsTransition.DisableButtons();
     }
     public void OnYestBtnClicked()
     {
+        AudioManager.instance.PlaySFX(AudioManager.instance.buttonClick);
         skipPanel.SetActive(false);
         buttonsTransition.EnableButtons();
         AudioManager.instance.Pause();
@@ -33,7 +35,8 @@ public class SkipMenu : MonoBehaviour
     }
     public void OnNoBtnClicked()
     {
-       skipPanel.SetActive(false);
+        AudioManager.instance.PlaySFX(AudioManager.instance.buttonClick);
+        skipPanel.SetActive(false);
         Time.timeScale = 1;
         buttonsTransition.EnableButtons();
     }

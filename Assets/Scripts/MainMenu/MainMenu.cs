@@ -19,34 +19,41 @@ public class MainMenu : MonoBehaviour
     public void OnPlayBtnClicked()
     {
         int level = PlayerPrefs.GetInt("UnlockedLevel", 1);
+        AudioManager.instance.PlaySFX(AudioManager.instance.buttonClick);
         SceneController.instance.LoadScene(level+1);
     }
     public void OnLevelsBtnClicked()
     {
         buttonsPanel.SetActive(false);
+        AudioManager.instance.PlaySFX(AudioManager.instance.buttonClick);
         levelsPanel.SetActive(true);
     }
     public void OnSettingsBtnClicked()
     {
         buttonsPanel.SetActive(false);
+        AudioManager.instance.PlaySFX(AudioManager.instance.buttonClick);
         settingsPanel.SetActive(true);
     }
     public void OnBackBtnClicked()
     {
         settingsPanel.SetActive(false);
         levelsPanel.SetActive(false);
+        AudioManager.instance.PlaySFX(AudioManager.instance.buttonClick);
         buttonsPanel.SetActive(true);
     }
     public void OnExitBtnClicked()
     {
         Debug.Log("Quiting");
+        AudioManager.instance.PlaySFX(AudioManager.instance.buttonClick);
         Application.Quit();
     }
     public void OnRateMeBtnClicked()
     {
 #if UNITY_ANDROID
+        AudioManager.instance.PlaySFX(AudioManager.instance.buttonClick);
         Application.OpenURL("https://www.facebook.com/boy.mausham");
 #elif UNITY_IOS
+        AudioManager.instance.PlaySFX(AudioManager.instance.buttonClick);
             Application.OpenURL("itms-apps://itunes.apple.com/app/idYOUR_APP_ID");
 #endif
     }

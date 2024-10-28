@@ -72,7 +72,7 @@ public class PlayerDeathCheck : MonoBehaviour
     }
     private void PlayDeadParticles()
     {
-        audioManager.PlaySFX(audioManager.death);
+       audioManager.PlaySFX(audioManager.death); 
         deadParticle.transform.position = transform.position;
         deadParticle.Play();
     }

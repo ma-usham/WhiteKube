@@ -177,8 +177,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicSource: {fileID: 101388310413754859}
   SFXsource: {fileID: 2736087940615405142}
-  background: {fileID: 8300000, guid: 3311617b4baa6414ab1a486a524ce70a, type: 3}
+  background: {fileID: 8300000, guid: 17a73fff2bd9bf04d88ceedf55eb9517, type: 3}
   death: {fileID: 8300000, guid: ce883eaf6a146b74888fdd614f8e00e7, type: 3}
+  buttonClick: {fileID: 8300000, guid: 756fb0e3fe6019e41942cdb23b34cb51, type: 3}
+  portalInSound: {fileID: 8300000, guid: 3291b3a51ef97c84a8ea338dff5c727d, type: 3}
 --- !u!1 &3141421726985397497
 GameObject:
   m_ObjectHideFlags: 0

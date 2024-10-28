@@ -18,23 +18,27 @@ public class PauseMenu : MonoBehaviour
     public void OnPauseBtnClicked()
     {
         pausePanel.SetActive(true);
+        AudioManager.instance.PlaySFX(AudioManager.instance.buttonClick);
         Time.timeScale = 0;
         buttonsTransition.DisableButtons();
     }
     public void OnHomeBtnClicked()
     {
-        SceneController.instance.LoadScene(0);
+        AudioManager.instance.PlaySFX(AudioManager.instance.buttonClick);
+        SceneController.instance.LoadScene(1);
         Time.timeScale = 1;
         pausePanel.SetActive(false);
     }
     public void OnRestartBtnClicked()
     {
+        AudioManager.instance.PlaySFX(AudioManager.instance.buttonClick);
         SceneController.instance.LoadScene(SceneManager.GetActiveScene().buildIndex);
         Time.timeScale = 1;
         pausePanel.SetActive(false);
     }
     public void OnResumeBtnClicked()
     {
+        AudioManager.instance.PlaySFX(AudioManager.instance.buttonClick);
         pausePanel.SetActive(false);
         Time.timeScale = 1;
         buttonsTransition.EnableButtons();

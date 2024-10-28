@@ -52,6 +52,7 @@ public class LevelMenu : MonoBehaviour
 
     public void OpenLevel(int levelId)
     {
+        AudioManager.instance.PlaySFX(AudioManager.instance.buttonClick);
         SceneController.instance.LoadScene(levelId);
     }
 }

@@ -2005,8 +2005,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: 2. Easy
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3ce2a4be167780a458b9cb9d38afa4e4, type: 2}
+  m_sharedMaterial: {fileID: -2248597261467535915, guid: 3ce2a4be167780a458b9cb9d38afa4e4,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -14485,10 +14486,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 4397798714304819825}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.43552688, y: 0.83900005}
-  m_AnchorMax: {x: 0.605, y: 0.9250001}
-  m_AnchoredPosition: {x: -8.625999, y: 3}
-  m_SizeDelta: {x: -1.9660034, y: 3}
+  m_AnchorMin: {x: 0.4522084, y: 0.83900005}
+  m_AnchorMax: {x: 0.62452084, y: 0.9250001}
+  m_AnchoredPosition: {x: 0, y: 3}
+  m_SizeDelta: {x: -7.9660034, y: 3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &5527635633682720570
 MonoBehaviour:

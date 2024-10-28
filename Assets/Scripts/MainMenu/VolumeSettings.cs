@@ -27,12 +27,14 @@ public class VolumeSettings : MonoBehaviour
     public void OnMusicButtonClicked()
     {
         isMusicOn = !isMusicOn;
+        AudioManager.instance.PlaySFX(AudioManager.instance.buttonClick);
         UpdateMusicSettings();
     }
 
     public void OnSfxButtonClicked()
     {
         isSfxOn = !isSfxOn;
+        AudioManager.instance.PlaySFX(AudioManager.instance.buttonClick);
         UpdateSfxSettings();
     }
 
