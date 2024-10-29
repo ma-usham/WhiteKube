@@ -955,12 +955,12 @@ PrefabInstance:
     - target: {fileID: 376602208512441499, guid: fe26fe683a37e9a42b31fec3762e054a,
         type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3711612857800653878, guid: fe26fe683a37e9a42b31fec3762e054a,
         type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4633293135278852713, guid: fe26fe683a37e9a42b31fec3762e054a,
         type: 3}
@@ -1031,6 +1031,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8852282537280223450, guid: fe26fe683a37e9a42b31fec3762e054a,
+        type: 3}
+      propertyPath: m_Interpolate
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8852282537280223450, guid: fe26fe683a37e9a42b31fec3762e054a,
+        type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1587,6 +1597,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: MoveableGround (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1836498763873190712, guid: ed524ca5753a2f441a4596058b04b534,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3695821182245122722, guid: ed524ca5753a2f441a4596058b04b534,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4239439759447812880, guid: ed524ca5753a2f441a4596058b04b534,
         type: 3}
       propertyPath: playerRb
@@ -1598,6 +1618,16 @@ PrefabInstance:
       value: 5.96
       objectReference: {fileID: 0}
     - target: {fileID: 5782392023505979573, guid: ed524ca5753a2f441a4596058b04b534,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145085684954766860, guid: ed524ca5753a2f441a4596058b04b534,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6349973885833717738, guid: ed524ca5753a2f441a4596058b04b534,
         type: 3}
       propertyPath: m_Layer
       value: 6
@@ -1661,6 +1691,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 1.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 8533924114375045268, guid: ed524ca5753a2f441a4596058b04b534,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

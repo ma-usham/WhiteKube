@@ -14,6 +14,7 @@ public class FallingGround : MonoBehaviour
     public float stopThreshold = 0.1f; // Threshold to determine if the object has reached the target
 
     private Vector2 startPos;
+    int initialLayer;
 
     private void Awake()
     {
@@ -22,6 +23,7 @@ public class FallingGround : MonoBehaviour
         startPos = transform.position;
         rb.bodyType = RigidbodyType2D.Kinematic;
         rb.gravityScale = 0;
+        initialLayer = this.gameObject.layer; ;
         //playerGravity = playerDeathCheck.rbplayer.gravityScale;
     }
 
@@ -68,7 +70,7 @@ public class FallingGround : MonoBehaviour
                 if (this.tag == "Obstacles")
                 {
                     this.tag = "Untagged";
-                    this.gameObject.layer = LayerMask.NameToLayer("Ground");
+                    this.gameObject.layer = initialLayer;
                 }
 
                 isFalling = false;
@@ -101,7 +103,7 @@ public class FallingGround : MonoBehaviour
         if (!isGround)
         {
             this.tag = "Obstacles";
-            this.gameObject.layer = LayerMask.NameToLayer("Default");
+            this.gameObject.layer = initialLayer;
         }
     }
 }
