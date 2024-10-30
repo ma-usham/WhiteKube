@@ -18,9 +18,19 @@ public class MainMenu : MonoBehaviour
 
     public void OnPlayBtnClicked()
     {
-        int level = PlayerPrefs.GetInt("UnlockedLevel", 1);
-        AudioManager.instance.PlaySFX(AudioManager.instance.buttonClick);
-        SceneController.instance.LoadScene(level+1);
+            int level = PlayerPrefs.GetInt("UnlockedLevel", 1);
+            AudioManager.instance.PlaySFX(AudioManager.instance.buttonClick);
+        if(level == 16)
+        {
+            levelsPanel.SetActive(true);
+        }
+        else
+        {
+            SceneController.instance.LoadScene(level + 1);
+        }
+            
+        
+        
     }
     public void OnLevelsBtnClicked()
     {

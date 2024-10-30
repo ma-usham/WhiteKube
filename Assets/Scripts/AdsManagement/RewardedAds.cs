@@ -62,7 +62,13 @@ public class RewardedAds : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowLi
                 PlayerPrefs.SetInt("UnlockedLevel", PlayerPrefs.GetInt("UnlockedLevel", 1) + 1);
                 PlayerPrefs.Save();
             }
-            SceneController.instance.NextLevel();
+
+            if (SceneManager.GetActiveScene().buildIndex == 16) { SceneController.instance.LoadScene(1);}
+            else
+            {
+                SceneController.instance.NextLevel();
+            }
+            
             Time.timeScale = 1;
         }
     }
