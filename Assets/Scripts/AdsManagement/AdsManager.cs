@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Advertisements;
+using UnityEngine.InputSystem;
 
 public class AdsManager : MonoBehaviour
 {
@@ -21,12 +23,12 @@ public class AdsManager : MonoBehaviour
             Destroy(gameObject);
             return;
         }
-        Instance = this;
-        DontDestroyOnLoad(gameObject);
-
-
-       // bannerAds.LoadBannerAd();
-       // interstitialAds.LoadInterstitialAd();
-       // rewardedAds.LoadRewardedAd();
+        else
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+            initializeAds.Initialize();   
+        }
+    
     }
 }

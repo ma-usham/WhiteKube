@@ -8,6 +8,7 @@ public class RewardedAds : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowLi
 {
     [SerializeField] private string androidAdUnitId;
     [SerializeField] private string iosAdUnitId;
+   
 
     private string adUnitId;
 
@@ -27,7 +28,7 @@ public class RewardedAds : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowLi
     }
 
     public void ShowRewardedAd()
-    {
+    {  
         Advertisement.Show(adUnitId, this);
         LoadRewardedAd();
     }
@@ -45,7 +46,10 @@ public class RewardedAds : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowLi
     #endregion
 
     #region ShowCallbacks
-    public void OnUnityAdsShowFailure(string placementId, UnityAdsShowError error, string message) { }
+    public void OnUnityAdsShowFailure(string placementId, UnityAdsShowError error, string message) {
+        AudioManager.instance.Resume();
+        Time.timeScale = 1;
+    }
 
     public void OnUnityAdsShowStart(string placementId) { }
 
@@ -53,6 +57,7 @@ public class RewardedAds : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowLi
 
     public void OnUnityAdsShowComplete(string placementId, UnityAdsShowCompletionState showCompletionState)
     {
+        
         if (placementId == adUnitId && showCompletionState.Equals(UnityAdsShowCompletionState.COMPLETED))
         {
             AudioManager.instance.Resume();

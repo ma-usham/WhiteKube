@@ -46,7 +46,7 @@ public class SceneController : MonoBehaviour
         transitionImage.gameObject.SetActive(true);
         transitionAnim.SetTrigger("End");
         yield return new WaitForSeconds(1);
-        if (SceneManager.GetActiveScene().buildIndex % 3 == 0)
+        if (SceneManager.GetActiveScene().buildIndex % 3 == 0 && (Application.internetReachability == NetworkReachability.ReachableViaLocalAreaNetwork || Application.internetReachability == NetworkReachability.ReachableViaCarrierDataNetwork))
         {
             AudioManager.instance.Pause();
             AdsManager.Instance.interstitialAds.ShowInterstitialAd();

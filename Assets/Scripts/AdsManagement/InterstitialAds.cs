@@ -39,7 +39,9 @@ public class InterstitialAds : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsSh
         Debug.Log("Interstitial Ad Loaded");
     }
 
-    public void OnUnityAdsFailedToLoad(string placementId, UnityAdsLoadError error, string message) { }
+    public void OnUnityAdsFailedToLoad(string placementId, UnityAdsLoadError error, string message) {
+        AudioManager.instance.Resume();
+    }
     #endregion
     #region ShowCallbacks
     public void OnUnityAdsShowFailure(string placementId, UnityAdsShowError error, string message) { }
@@ -50,6 +52,7 @@ public class InterstitialAds : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsSh
 
     public void OnUnityAdsShowComplete(string placementId, UnityAdsShowCompletionState showCompletionState)
     {
+       
         Debug.Log("Interstitial Ad Completed");
         AudioManager.instance.Resume();
     }
