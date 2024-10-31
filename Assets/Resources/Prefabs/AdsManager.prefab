@@ -78,7 +78,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   androidGameId: 5719825
   iosGameId: 5719824
-  isTesting: 1
+  isTesting: 0
   rewardedAds: {fileID: 2136338808985462862}
   interstitialAds: {fileID: 2469515176139664631}
 --- !u!114 &2469515176139664631
