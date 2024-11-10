@@ -9,11 +9,13 @@ public class MainMenu : MonoBehaviour
     public GameObject settingsPanel;
     public GameObject levelsPanel;
     public GameObject buttonsPanel;
+    public GameObject charactersPanel;
 
     private void Start()
     {
         settingsPanel.SetActive(false);
         levelsPanel.SetActive(false);  
+        charactersPanel.SetActive(false);
     }
 
     public void OnPlayBtnClicked()
@@ -44,10 +46,17 @@ public class MainMenu : MonoBehaviour
         AudioManager.instance.PlaySFX(AudioManager.instance.buttonClick);
         settingsPanel.SetActive(true);
     }
+    public void OnCharactersBtnClicked()
+    {
+        buttonsPanel.SetActive(false);
+        AudioManager.instance.PlaySFX(AudioManager.instance.buttonClick);
+        charactersPanel.SetActive(true);
+    }
     public void OnBackBtnClicked()
     {
         settingsPanel.SetActive(false);
         levelsPanel.SetActive(false);
+        charactersPanel.SetActive(false);
         AudioManager.instance.PlaySFX(AudioManager.instance.buttonClick);
         buttonsPanel.SetActive(true);
     }

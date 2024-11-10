@@ -66,6 +66,12 @@ public class RewardedAds : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowLi
                 PlayerPrefs.SetInt("ReachedIndex", SceneManager.GetActiveScene().buildIndex + 1);
                 PlayerPrefs.SetInt("UnlockedLevel", PlayerPrefs.GetInt("UnlockedLevel", 1) + 1);
                 PlayerPrefs.Save();
+                if (SceneManager.GetActiveScene().buildIndex > 2 && SceneManager.GetActiveScene().buildIndex % 2 == 1)
+                {
+                    PlayerPrefs.SetInt("UnlockedPlayer", PlayerPrefs.GetInt("UnlockedPlayer", 1) + 1);
+                    Debug.Log("PLayerUnloced");
+                    PlayerPrefs.Save();
+                }
             }
 
             if (SceneManager.GetActiveScene().buildIndex == 16) { SceneController.instance.LoadScene(1);}

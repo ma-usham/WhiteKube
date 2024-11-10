@@ -5056,6 +5056,7 @@ GameObject:
   - component: {fileID: 7955754107422454746}
   - component: {fileID: 7626219982181230119}
   - component: {fileID: 3640738234690027083}
+  - component: {fileID: 8743862620996793002}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -5203,7 +5204,6 @@ MonoBehaviour:
   deadParticle: {fileID: 5640612072912486321}
   playerSprite: {fileID: 288412524991662464}
   playerTrail: {fileID: 7955754107422454746}
-  rbplayer: {fileID: 0}
   isdead: 0
   respawnTime: 0.5
 --- !u!96 &7955754107422454746
@@ -5347,3 +5347,23 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!114 &8743862620996793002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8655183467573204736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cc9e65495e6ab94b8c8ef58fd22df64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterSprites:
+  - {fileID: 21300000, guid: aa82192df4eefa64e82ebe5681f7ea1e, type: 3}
+  - {fileID: 21300000, guid: 5dc12372131d60a45b7beb74368670ea, type: 3}
+  - {fileID: 21300000, guid: 57b6d1c749ebc264aa0d889106895600, type: 3}
+  - {fileID: 21300000, guid: 3503282286ff32048a268670cac021ae, type: 3}
+  - {fileID: 21300000, guid: 1beced56c6f33b64eb89b8fbba569289, type: 3}
+  - {fileID: 21300000, guid: f0e94ee475c39ee4fada6545740158bd, type: 3}
+  - {fileID: 21300000, guid: 12277e19b10f7c446b0aa9fd05c504c1, type: 3}
