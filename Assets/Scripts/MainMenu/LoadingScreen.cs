@@ -11,6 +11,10 @@ public class LoadingScreen : MonoBehaviour
     {
         loadingPanel.SetActive(true);
         StartCoroutine(LoadAsyncScene());
+        PlayerPrefs.DeleteAll();
+
+        // Ensure the changes are saved immediately
+        PlayerPrefs.Save();
     }
 
     IEnumerator LoadAsyncScene()

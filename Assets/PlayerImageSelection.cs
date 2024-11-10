@@ -59,6 +59,7 @@ public class PlayerImageSelection : MonoBehaviour
 
     public void SelectPlayer(int playerIndex)
     {
+        AudioManager.instance.PlaySFX(AudioManager.instance.buttonClick);
         // Save the selected player index in PlayerPrefs
         PlayerPrefs.SetInt(SelectedPlayerKey, playerIndex);
         PlayerPrefs.Save();
@@ -69,6 +70,7 @@ public class PlayerImageSelection : MonoBehaviour
 
     private void ShowSelectedText(int playerIndex)
     {
+        
         // Clear "Selected" text from all buttons
         foreach (Button btn in buttons)
         {
