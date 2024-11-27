@@ -9,6 +9,7 @@ public class LoadingScreen : MonoBehaviour
 
     void Start()
     {
+        
         loadingPanel.SetActive(true);
         StartCoroutine(LoadAsyncScene());
         PlayerPrefs.DeleteAll();

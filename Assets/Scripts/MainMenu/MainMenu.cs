@@ -70,7 +70,7 @@ public class MainMenu : MonoBehaviour
     {
 #if UNITY_ANDROID
         AudioManager.instance.PlaySFX(AudioManager.instance.buttonClick);
-        Application.OpenURL("https://www.facebook.com/boy.mausham");
+        Application.OpenURL("https://play.google.com/store/apps/details?id=com.Mausham.WhiteKube&hl=en");
 #elif UNITY_IOS
         AudioManager.instance.PlaySFX(AudioManager.instance.buttonClick);
             Application.OpenURL("itms-apps://itunes.apple.com/app/idYOUR_APP_ID");

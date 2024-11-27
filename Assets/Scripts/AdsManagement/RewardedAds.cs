@@ -66,7 +66,7 @@ public class RewardedAds : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowLi
                 PlayerPrefs.SetInt("ReachedIndex", SceneManager.GetActiveScene().buildIndex + 1);
                 PlayerPrefs.SetInt("UnlockedLevel", PlayerPrefs.GetInt("UnlockedLevel", 1) + 1);
                 PlayerPrefs.Save();
-                if (SceneManager.GetActiveScene().buildIndex > 4 && SceneManager.GetActiveScene().buildIndex % 2 == 1)
+                if (PlayerPrefs.GetInt("UnlockedLevel") > 3 && PlayerPrefs.GetInt("UnlockedLevel") % 2 == 1)
                 {
                     PlayerPrefs.SetInt("UnlockedPlayer", PlayerPrefs.GetInt("UnlockedPlayer", 1) + 1);
                     Debug.Log("PLayerUnloced");

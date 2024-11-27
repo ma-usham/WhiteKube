@@ -13,12 +13,16 @@ public class PlayerImageSelection : MonoBehaviour
     private void Awake()
     {
 
-
-        int unlockedImages = PlayerPrefs.GetInt("UnlockedPlayer", 1);
+        //for tracking level
+        //int trackLevel = PlayerPrefs.GetInt("UnlockedLevel");
+        PlayerPrefs.SetInt("UnlockedPlayer", PlayerPrefs.GetInt("UnlockedLevel") > 3 ? ((PlayerPrefs.GetInt("UnlockedLevel") - 1) / 2) : 1);
+        int unlockedImages = PlayerPrefs.GetInt("UnlockedPlayer");
+        Debug.Log(unlockedImages);
+        
 
         // Initialize buttons and "Selected" text
         for (int i = 0; i < buttons.Length; i++)
-        {
+        { 
             // Disable button interactability by default
             buttons[i].interactable = false;
 
